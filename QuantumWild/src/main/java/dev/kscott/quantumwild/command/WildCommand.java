@@ -82,7 +82,7 @@ public class WildCommand {
      * Initializes & registers commands.
      */
     private void setupCommands() {
-        final Command.Builder<CommandSender> builder = this.commandManager.commandBuilder("wild", "w");
+        final Command.Builder<CommandSender> builder = this.commandManager.commandBuilder("wild", "rtp");
 
         final CommandArgument<CommandSender, String> arg1 = StringArgument.<CommandSender>newBuilder("arg1")
                 .asOptional()
