@@ -1,8 +1,8 @@
 package dev.kscott.quantum.rule.rules.sync;
 
-import com.massivecraft.factions.Board;
+/*import com.massivecraft.factions.Board;
 import com.massivecraft.factions.FLocation;
-import com.massivecraft.factions.Faction;
+import com.massivecraft.factions.Faction;*/
 import dev.kscott.quantum.rule.option.FactionsWhitelistOption;
 import org.bukkit.Chunk;
 import org.bukkit.Location;
@@ -27,12 +27,13 @@ public class AvoidClaimsRule extends SyncQuantumRule {
 
     @Override
     public boolean validate(@NonNull Chunk chunk, int x, int y, int z) {
-        final @NonNull Location location = chunk.getBlock(x, y, z).getLocation();
+        /*final @NonNull Location location = chunk.getBlock(x, y, z).getLocation();
         final @NonNull FLocation fLocation = new FLocation(location);
 
         final @NonNull Faction faction = Board.getInstance().getFactionAt(fLocation);
         final @NonNull String tag = faction.getComparisonTag();
 
-        return factionsWhitelist.contains(tag);
+        return factionsWhitelist.contains(tag);*/
+        return true; // ??
     }
 }
